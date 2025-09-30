@@ -51,6 +51,45 @@ over the same cable by using different frequency ranges.
 This image shows how cable internet works: multiple households connect through coaxial cable to the headend, and signals for TV, internet,
 and control are separated using FDM so that they can coexist without interference.
 
+7.What is ISP router?
+An ISP router is the router used by your Internet Service Provider (ISP) to connect you (the customer) to the wider internet. 
+Let’s break it down:
+1. Where it sits
+Your devices (PC, phone, smart TV, etc.) connect to your home router/modem.
+That modem/router connects to your ISP’s network equipment.
+One key piece of that equipment is the ISP router — a high-capacity router at the ISP’s side.
+
+
+8.Slide 16 image explanation
+This image explains DSL (Digital Subscriber Line) access networks, which provide Internet access using existing telephone lines.
+Let’s break it down step by step:
+1. Home setup
+In each house, a DSL modem is connected to the telephone line.
+A splitter is used to separate:
+Voice signals (for regular phone calls).
+Data signals (for Internet).
+Both travel on the same copper telephone line but at different frequency ranges:
+Lower frequencies → voice.
+Higher frequencies → Internet data.
+2. Transmission to the central office
+Each home has a dedicated line running to the ISP’s central office.
+At the central office, a device called DSLAM (Digital Subscriber Line Access Multiplexer) collects all DSL connections from many homes.
+The DSLAM separates:
+Voice traffic → goes into the traditional telephone network.
+Data traffic → goes to the ISP’s Internet routers.
+3. Data flow
+Internet data from your computer → DSL modem → telephone line → DSLAM → ISP routers → Internet.
+Voice calls from your phone → telephone line → DSLAM → telephone network.
+4. Performance
+DSL provides dedicated bandwidth to each home (unlike cable, where neighbors share bandwidth).
+Speeds (depending on DSL type and distance from the central office):
+Downstream (download): 24–52 Mbps
+Upstream (upload): 3.5–16 Mbps
+✅ Summary:
+This diagram shows how DSL uses the existing telephone line to carry both voice and Internet data simultaneously.
+The splitter in the home and the DSLAM in the central office make sure that data goes to the Internet and voice goes to the telephone network,
+without interfering with each other.
+
 
 
 
