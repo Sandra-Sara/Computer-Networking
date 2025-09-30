@@ -1,0 +1,58 @@
+1.What is Internet?
+  Ans:The Internet is a global network of interconnected computers and devices that communicate with each other using a common set of rules called protocols (mainly TCP/IP).
+
+🌍 Global network: It connects millions of private, public, academic, business, and government networks worldwide.
+📡 Communication: Devices exchange data through wired (fiber, cables) and wireless (Wi-Fi, cellular, satellite) technologies.
+📧 Services: It supports services such as the World Wide Web (WWW), email, file transfer, online gaming, streaming, social media, and cloud computing.
+🔗 Decentralized: No single person or organization owns the entire Internet—it’s maintained by collaboration between service providers, organizations, and protocols.
+
+  2.Service View Of Internet
+provides programming interface to distributed applications:
+“hooks” allowing sending/receiving  apps to “connect” to, use  Internet transport service
+provides service options, analogous to postal service
+3.What is Protocol?
+Protocols define the format, order of messages sent and received among network entities, and actions taken on message transmission, receipt .
+
+ 4.Network edge: hosts, access network, physical media
+1.hosts: clients and servers
+servers often in data centers
+
+2.Access networks, physical media:
+wired, wireless communication links 
+
+5.Network core: 
+interconnected routers
+network of networks
+
+14 page diagram explanation
+This image explains cable-based access networks, which are commonly used to provide internet services to homes through cable TV infrastructure.
+Let’s break it down:
+1. Cable-based access setup
+Homes are connected via coaxial cable to a cable headend (the service provider’s central hub).
+Each home has a cable modem that connects computers and TVs.
+A splitter separates internet (data) signals and television signals.
+2. Shared cable
+All the homes in a neighborhood share the same coaxial cable line back to the cable headend.
+This means bandwidth is shared among users.
+3. Frequency Division Multiplexing (FDM)
+The coaxial cable carries multiple signals at the same time by assigning each service to a different frequency band.
+For example:
+Some frequencies carry video channels (TV programs).
+Other frequencies carry data channels (Internet traffic, upload/download).
+A separate frequency band is used for control signals.
+The diagram at the bottom shows how different channels (1–9) are placed into separate frequency bands:
+Channels 1–6 → Video
+Channel 7–8 → Data (Internet)
+Channel 9 → Control
+4. Key Point
+The main concept here is Frequency Division Multiplexing (FDM), which allows multiple signals (TV, internet, control) to travel simultaneously
+over the same cable by using different frequency ranges.
+👉 In short:
+This image shows how cable internet works: multiple households connect through coaxial cable to the headend, and signals for TV, internet,
+and control are separated using FDM so that they can coexist without interference.
+
+
+
+
+
+
