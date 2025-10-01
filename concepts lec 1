@@ -120,6 +120,21 @@ high-bandwidth links (10s to 100s Gbps) connect hundreds to thousands of servers
 
 12.Alternative to packet switching: circuit switching
 
+13.Page 33 explanation (Circuit Switching)
+What is circuit switching?
+In circuit switching, end-to-end resources are allocated and reserved for a call between a source and a destination.
+This is like how traditional telephone networks work: when you call someone, a dedicated path is reserved for the duration of your call.
+2. Diagram explanation
+The diagram shows four routers (or switches) connected by links, each link having four circuits.
+A call between two computers (shown in red) gets a dedicated circuit in each link along its path:
+Example: 2nd circuit in the top link, 1st circuit in the right link.
+Red line represents the allocated path for this specific call.
+3. Characteristics of circuit switching
+Dedicated resources: Each circuit is reserved for the call; no sharing with other calls.
+Circuit-like performance: Guaranteed bandwidth and predictable performance because the path is exclusive.
+Idle circuits: If the call is not using the circuit at some moment, that segment is idle (wasted resources).
+Common usage: Used in traditional telephone networks where guaranteed connections are required.
+
 
 
 
