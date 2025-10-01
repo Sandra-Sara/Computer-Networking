@@ -50,7 +50,7 @@ Channel 9 → Control
 4. Key Point
 The main concept here is Frequency Division Multiplexing (FDM), which allows multiple signals (TV, internet, control) to travel simultaneously
 over the same cable by using different frequency ranges.
-👉 In short:
+ In short:
 This image shows how cable internet works: multiple households connect through coaxial cable to the headend, and signals for TV, internet,
 and control are separated using FDM so that they can coexist without interference.
 
@@ -88,7 +88,7 @@ DSL provides dedicated bandwidth to each home (unlike cable, where neighbors sha
 Speeds (depending on DSL type and distance from the central office):
 Downstream (download): 24–52 Mbps
 Upstream (upload): 3.5–16 Mbps
-✅ Summary:
+Summary:
 This diagram shows how DSL uses the existing telephone line to carry both voice and Internet data simultaneously.
 The splitter in the home and the DSLAM in the central office make sure that data goes to the Internet and voice goes to the telephone network,
 without interfering with each other.
