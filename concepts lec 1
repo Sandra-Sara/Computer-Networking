@@ -102,6 +102,19 @@ A wireless access network (WAN) is a type of network that allows devices to conn
 using physical cables. Instead, it uses wireless communication technologies, like Wi-Fi, Bluetooth, or cellular networks.
 
 
+11.Page 19 explanation
+Diagram part
+Several laptops and desktops (users).
+They are connected through an Ethernet switch and Wireless Access Point (WiFi).
+The switch connects to an institutional router, which then connects to the ISP (Internet).
+The institution also has its own mail servers and web servers.
+Text part
+Enterprise networks are used by companies, universities, etc.
+They use a mix of wired and wireless link technologies, connected through switches and routers.
+Ethernet speeds: 100 Mbps, 1 Gbps, 10 Gbps.
+WiFi speeds: 11 Mbps, 54 Mbps, 450 Mbps
+
+
 
 
 
