@@ -1,0 +1,13 @@
+🔹 HTTP/1.1
+Improvement over HTTP/1.0:
+Instead of opening a new TCP connection for every object (very costly), HTTP/1.1 introduced:
+Persistent connections (reuse the same TCP connection).
+Pipelining (send multiple GET requests without waiting for responses).
+Problem: FCFS (First-Come-First-Served) response order
+Server must send responses in the same order as requests arrived.
+Suppose the first request is for a large image and the second is for a small CSS file.
+The CSS file must wait until the image is done before being sent → this is Head-of-Line (HOL) blocking.
+Problem: TCP loss recovery
+If a TCP segment (a piece of data) is lost, TCP must retransmit.
+Until retransmission succeeds, all pending objects are stalled.
+This amplifies the HOL blocking problem.
