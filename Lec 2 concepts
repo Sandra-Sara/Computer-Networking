@@ -76,3 +76,17 @@ subsequent HTTP messages  between same client/server sent over open connection
 client sends requests as soon as it encounters a referenced object
 as little as one RTT for all the referenced objects (cutting response time in half)
 
+
+🧩 1. Request Line
+method  sp  URL  sp  version  cr  lf
+method → the type of HTTP request, e.g.
+GET, POST, PUT, DELETE, etc.
+Example: GET
+URL → the resource the client wants from the server.
+Example: /wireshark-labs/HTTP-wireshark-file1.html
+version → the HTTP version being used.
+Example: HTTP/1.1
+sp → space character
+cr lf → carriage return + line feed (end of line)
+GET /wireshark-labs/HTTP-wireshark-file1.html HTTP/1.1
+
