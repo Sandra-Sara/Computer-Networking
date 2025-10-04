@@ -142,6 +142,24 @@ Key idea: It is a global decision, considering all routers and links.
 11.Data Center Network
 high-bandwidth links (10s to 100s Gbps) connect hundreds to thousands of servers together, and to Internet
 
+
+11.32 number page explanation(Packet Switching & Queueing)
+Packet-Switching and Queueing
+Packet-switching is a method used in computer networks where data is broken into packets and each packet is sent independently
+to the destination. In this diagram, computers A and B send packets via a router to other networks. Each packet travels through
+a network where every link has a maximum transmission rate (speed), such as 100 Mb/s close to the source and 1.5 Mb/s on the next segment.
+
+Queueing and Loss Explained
+When the arrival rate (in bits-per-second) of packets to a router exceeds the outgoing link's capacity (for example,
+if packets arrive faster than 1.5 Mb/s), a queue forms in the router’s memory (buffer).
+If the buffer isn't full, incoming packets are queued and wait for their turn to be sent.
+If the buffer fills up (due to heavy or sustained excess traffic), any new arriving packets are dropped—this is called "packet loss."
+Key Points
+Packets wait in a queue if a router's output link is busy.
+Excess packets are lost if the queue (buffer) becomes full, reducing overall transmission reliability.
+This mechanism underpins why delays or data loss can occur in networks with heavy usage.
+
+
 12.Alternative to packet switching: circuit switching
 
 13.Page 33 explanation (Circuit Switching)
