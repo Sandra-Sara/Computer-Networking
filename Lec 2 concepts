@@ -90,3 +90,20 @@ sp → space character
 cr lf → carriage return + line feed (end of line)
 GET /wireshark-labs/HTTP-wireshark-file1.html HTTP/1.1
 
+Methods of HTTP request message
+POST method:
+web page often includes form input
+user input sent from client to server in entity body of HTTP POST request .
+
+GET method (for sending data to server):
+include user data in URL field of HTTP GET request message (following a ‘?’):
+
+HEAD method:
+requests headers (only) that would be returned if specified URL were requested  with an HTTP GET method.
+
+PUT method:
+uploads new file (object) to server
+completely replaces file that exists at specified URL with content in entity body of POST HTTP request message
+
+
+
