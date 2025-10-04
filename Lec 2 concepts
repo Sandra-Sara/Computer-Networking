@@ -103,7 +103,17 @@ requests headers (only) that would be returned if specified URL were requested  
 
 PUT method:
 uploads new file (object) to server
-completely replaces file that exists at specified URL with content in entity body of POST HTTP request message
+completely replaces file that exists at specified URL with content in entity body of POST HTTP request message.
+
+
+Web caches
+Goal: satisfy client requests without involving origin server
+user configures browser to point to a (local) Web cache
+browser sends all HTTP requests to cache
+if object in cache: cache returns object to client
+else cache requests object from origin server, caches received object, then returns object to client
+
+
 
 
 
