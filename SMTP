@@ -1,0 +1,11 @@
+This image explains how email mail servers work by outlining the role of mail servers, the SMTP protocol, and the flow of messages between clients and servers.
+Mail Servers
+A mail server manages email for users by handling two main storage areas: the mailbox (which contains incoming emails for a user) and the message queue 
+(which stores outgoing emails that still need to be sent).
+SMTP Protocol
+The Simple Mail Transfer Protocol (SMTP) is used to send emails between mail servers.
+The sending mail server acts as the client, while the receiving mail server is considered the "server" during this transaction.
+Flow of Messages
+When a user sends an email using a user agent (like an email app), the message is placed in the outgoing message queue of the user's mail server (shown in green).
+Using SMTP, the mail server transmits the email to the recipient's mail server, where it is stored in the recipient’s mailbox (shown in yellow).
+Users access their mailbox via their user agent to read incoming messages.
