@@ -55,3 +55,11 @@ Non-persistent HTTP example:
 5. HTTP server closes TCP connection.
 6.. HTTP client receives response message containing html file, displays html.  Parsing html file, finds 10 referenced jpeg  objects.
 7.. Steps 1-6 repeated for each of 10 jpeg objects.
+
+
+RTT (definition): time for a small packet to travel from client to server and back
+HTTP response time (per object):
+one RTT to initiate TCP connection
+one RTT for HTTP request and first few bytes of HTTP response to return
+object/file transmission time
+Non-persistent HTTP response time =  2RTT+ file transmission  time
