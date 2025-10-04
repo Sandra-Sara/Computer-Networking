@@ -207,4 +207,56 @@ Regional ISPs connect to these larger networks and provide access to end users v
 
 
 
+🧩 1. Application Layer
+Function:
+Supports network applications — this is the layer where user-level network services and applications operate.
+Examples:
+HTTP → Used for web browsing (used by browsers like Chrome, Firefox)
+IMAP / SMTP → Used for sending and receiving emails
+DNS → Converts domain names (like google.com) into IP addresses
+In short:
+ It’s the layer that users directly interact with through applications.
+
+
+🚚 2. Transport Layer
+Function:
+Responsible for end-to-end (process-to-process) data transfer. It ensures that data sent from one application process
+reaches the correct process on another computer.
+Examples:
+TCP (Transmission Control Protocol) → Reliable, connection-oriented (e.g. for web browsing, email)
+UDP (User Datagram Protocol) → Fast but unreliable, connectionless (e.g. for video streaming, gaming)
+In short:
+It controls how data is sent and ensures it arrives properly (TCP) or quickly (UDP).
+
+
+🌐 3. Network Layer
+Function:
+Handles the routing of datagrams (packets) from the source to the destination — possibly across multiple networks.
+Examples:
+IP (Internet Protocol) → Provides logical addressing (IP addresses)
+Routing protocols (e.g. OSPF, BGP) → Decide the best path for data to travel
+In short:
+ It decides where data should go and how it gets there.
+
+
+🔗 4. Link Layer
+Function:
+Manages data transfer between neighboring network elements (like between your computer and router).
+It deals with frames and local addressing (MAC address).
+Examples:
+Ethernet (wired connection)
+802.11 (WiFi) (wireless connection)
+PPP (Point-to-Point Protocol)
+In short:
+ It provides communication between directly connected devices.
+
+
+⚡ 5. Physical Layer
+
+Function:
+Responsible for the actual transmission of bits (1s and 0s) through the communication medium (like copper wire,
+fiber optics, or radio waves).
+
+
+
 
