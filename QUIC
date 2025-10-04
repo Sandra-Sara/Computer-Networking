@@ -1,0 +1,19 @@
+This slide explains QUIC (Quick UDP Internet Connections), which is an application-layer protocol developed to improve the performance of HTTP traffic.
+Key Points
+QUIC operates on top of UDP, instead of the traditional TCP.
+Its main objective is to increase the performance of HTTP, making connections faster and more efficient.
+QUIC is widely used on many Google servers and applications, such as Chrome and the mobile YouTube app.
+Stack Diagram Explanation
+The stack diagram shows the traditional HTTP/2 over TCP/IP architecture:
+Application Layer: HTTP/2
+Security Layer: TLS (Transport Layer Security)
+Transport Layer: TCP (Transmission Control Protocol)
+Network Layer: IP (Internet Protocol)
+In traditional architecture, HTTP/2 relies on TCP and TLS for transport and security, respectively. QUIC replaces TCP with a UDP-based solution, integrating both 
+transport and security (like TLS) in a single protocol, reducing latency and improving connection efficiency.
+
+
+No, the stack diagram shown in the image is not for QUIC; it depicts the traditional HTTP/2 over TCP/IP stack, which includes HTTP/2, TLS, TCP, and IP layers. 
+QUIC replaces the TCP layer with UDP and combines transport and security features into a single protocol, typically supporting HTTP/3 rather than HTTP/2. 
+In a typical QUIC stack, you would see HTTP/3, QUIC, UDP, and IP as the layers instead of HTTP/2/TLS/TCP/IP.
+
