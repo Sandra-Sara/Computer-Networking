@@ -1,0 +1,36 @@
+🔹 Image 1: First-party vs. Third-party Cookies
+User visits nytimes.com (sports)
+Browser sends an HTTP GET request.
+Server replies with content + sets a cookie (1634) → this is a first-party cookie, because it comes from the website you chose to visit.
+The page also loads ads from AdX.com (an ad network).
+The browser makes another HTTP GET request to AdX.com, with “Referrer: NY Times Sports”.
+AdX.com responds and sets its own cookie (7493).
+This is a third-party cookie, because it comes from a site you did not directly visit.
+ At this point:
+Browser has two cookies:
+1634 (from nytimes.com – first party)
+7493 (from adx.com – third party)
+
+
+🔹 Image 2: Cross-Site Tracking
+Now the user visits a different site: socks.com.
+Browser requests page → socks.com responds.
+socks.com also loads ads from AdX.com.
+Browser makes request to AdX.com, this time including cookie 7493 (the one it got earlier).
+AdX now knows:
+This same user visited nytimes.com (sports) earlier.
+Now they are on socks.com.
+ AdX can track browsing behavior across multiple sites (nytimes.com, socks.com, etc.), because its third-party cookie is present on all of them.
+
+
+🔹 Image 3: Targeted Ads (One Day Later)
+Next day, the user visits nytimes.com (arts section).
+Browser sends cookie 1634 (nytimes.com first-party).
+Also sends cookie 7493 (adx.com third-party) when ads are loaded.
+AdX sees cookie 7493 → recognizes this user from yesterday.
+It knows:
+They visited NYT Sports (2/15)
+They visited Socks.com (2/16)
+Now they’re on NYT Arts (2/17).
+AdX sends back a targeted ad for socks!
+Because it “remembers” the user’s browsing history.
