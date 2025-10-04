@@ -118,6 +118,26 @@ They use a mix of wired and wireless link technologies, connected through switch
 Ethernet speeds: 100 Mbps, 1 Gbps, 10 Gbps.
 WiFi speeds: 11 Mbps, 54 Mbps, 450 Mbps
 
+11.27 number slide explanation
+This slide explains the two key functions of the network core (inside routers): Forwarding and Routing.
+
+1. Forwarding (Local Action)
+Also called switching.
+It happens inside a single router.
+Task: Move a packet from the router’s input link to the correct output link.
+Uses a forwarding table:
+The router checks the destination address in the packet header.
+Looks up the corresponding output port (e.g., 0111 → output link 2).
+Sends the packet out through that port.
+Key idea: It is a local decision, done per packet, inside each router.
+
+2. Routing (Global Action)
+Happens across the whole network.
+Task: Determine the end-to-end path packets should take from source to destination.
+Uses routing algorithms (e.g., Dijkstra’s shortest path, distance vector, OSPF, BGP).
+Once paths are computed, each router’s forwarding table is updated accordingly.
+Key idea: It is a global decision, considering all routers and links.
+
 
 11.Data Center Network
 high-bandwidth links (10s to 100s Gbps) connect hundreds to thousands of servers together, and to Internet
