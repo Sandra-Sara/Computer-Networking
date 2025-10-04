@@ -1,0 +1,20 @@
+🧩 Packet 93
+Source: 10.0.0.44
+→ This is the client (your local machine or browser).
+Destination: 128.119.245.12
+→ This is the web server (hosting the webpage).
+Protocol: HTTP
+Info:
+GET /wireshark-labs/HTTP-wireshark-file1.html HTTP/1.1
+ This is an HTTP GET request, meaning the client is asking the server for a webpage named
+/wireshark-labs/HTTP-wireshark-file1.html.
+
+🧩 Packet 95
+Source: 128.119.245.12
+→ The server responds.
+Destination: 10.0.0.44
+→ The client receives the response.
+Protocol: HTTP
+Info:
+HTTP/1.1 200 OK (text/html)
+ This means the server successfully delivered the requested page, with the content type text/html.
