@@ -16,6 +16,10 @@ provides service options, analogous to postal service
 3.What is Protocol?
 Protocols define the format, order of messages sent and received among network entities, and actions taken on message transmission, receipt .
 
+Packet Switches
+A packet switch is a device in a computer network that receives, stores, and forwards packets (small chunks of data).
+Instead of sending a whole message at once, data is broken into packets, and each packet can take its own path across the network.
+
  4.Network edge: hosts, access network, physical media
 1.hosts: clients and servers
 servers often in data centers
