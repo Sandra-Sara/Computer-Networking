@@ -1,0 +1,17 @@
+Mail Access Protocols (for retrieving messages):
+These are used by the recipient to access email stored on their mail server.
+Two main ones are IMAP and POP3.
+IMAP (Internet Mail Access Protocol, RFC 3501):
+Email messages are kept on the server.
+Client retrieves them when needed.
+Supports message deletion, folders, and organization directly on the server.
+Good for multi-device use (you see the same folders/messages everywhere).
+POP3 (not mentioned but implied):
+Downloads emails from the server to the client.
+Often removes them from the server after download (unless configured otherwise).
+
+HTTP (for Webmail like Gmail, Hotmail, Yahoo! Mail):
+Provides a web-based interface for email.
+Under the hood:
+Uses SMTP to send email.
+Uses IMAP or POP3 to retrieve messages.
