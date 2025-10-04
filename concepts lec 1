@@ -178,6 +178,32 @@ Idle circuits: If the call is not using the circuit at some moment, that segment
 Common usage: Used in traditional telephone networks where guaranteed connections are required.
 
 
+The Scaling Problem
+If every access ISP directly connects to every other access ISP, the number of required connections grows rapidly—specifically,
+with the square of the number of networks (O(N^2)), where N is the number of access networks. This approach does not scale
+well because the number of physical and logical links becomes overwhelmingly large as more ISPs are added.
+
+Option: connect each access ISP to one global transit ISP? 
+Customer and provider ISPs have economic agreement.
+But if one global ISP is viable business, there will be competitors ….
+But if one global ISP is viable business, there will be competitors …. who will want to be connected
+… and regional networks may arise to connect access nets to ISPs 
+
+
+Page 45 explanation
+
+This image explains the practical and scalable structure of the internet as a "network of networks," organizing how millions
+of access ISPs connect efficiently.
+Hierarchical Structure
+The internet is structured in layers with a small number of well-connected large networks at the core or "center," which include:
+Tier-1 ISPs: These are large commercial internet service providers (such as Level 3, Sprint, AT&T, NTT) with national and international
+coverage. They interconnect with each other and act as the backbone of the internet.
+Content Provider Networks: These networks belong to major content companies like Google and Facebook. They own private networks that 
+connect their data centers directly to the internet, often bypassing the traditional tier-1 or regional ISPs for more efficient delivery.
+Interconnections
+Tier-1 ISPs form a mesh of interconnected major networks.
+Internet Exchange Points (IXPs) serve as physical infrastructure allowing networks to interconnect and exchange traffic efficiently.
+Regional ISPs connect to these larger networks and provide access to end users via access ISPs at the bottom layer.
 
 
 
