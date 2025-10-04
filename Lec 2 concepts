@@ -32,3 +32,26 @@ Step	Direction	Description
 2️⃣	128.119.245.12 → 10.0.0.44	Server responds with “200 OK” and sends the HTML file
 ⚙️ In simpler terms
 Your computer (10.0.0.44) requested a webpage from a remote web server (128.119.245.12), and the server successfully replied with that webpage in HTML format.
+
+
+HTTP Connections 2 types:Non persistent HTTP,Persistent HTTP(one object can be sent or multiple objects can be sent)
+Non-persistent HTTP
+TCP connection opened
+at most one object sent over TCP connection
+TCP connection closed
+downloading multiple objects required multiple connections
+
+Persistent HTTP
+TCP connection opened to a server
+multiple objects can be sent over single TCP connection between client, and that server
+TCP connection closed
+
+
+Non-persistent HTTP example:
+1.. HTTP client initiates TCP connection to HTTP server (process) at www.someSchool.edu on port 80.
+2.. HTTP server at host www.someSchool.edu waiting for TCP connection at port 80  “accepts” connection, notifying client.
+3.HTTP client sends HTTP request message (containing URL) into TCP connection socket. Message indicates that client wants object someDepartment/home.index.
+4.HTTP server receives request message, forms response message containing requested object, and sends message into its socket.
+5. HTTP server closes TCP connection.
+6.. HTTP client receives response message containing html file, displays html.  Parsing html file, finds 10 referenced jpeg  objects.
+7.. Steps 1-6 repeated for each of 10 jpeg objects.
