@@ -1,0 +1,21 @@
+HTTP/2 (RFC 7540, 2015) — Key Improvements
+The main goal: reduce delay for multi-object requests.
+🔹 1. Methods, status codes, headers mostly same
+HTTP/2 did not change the semantics of HTTP (GET, POST, status codes, headers stay the same).
+Changes are in how data is transported.
+🔹 2. Flexible Transmission Order (Client Priority)
+Instead of strict FCFS, the client can specify priority of objects.
+Example: HTML and CSS are more urgent than images.
+Server can schedule object delivery accordingly.
+🔹 3. Server Push
+Server can push resources not explicitly requested by client.
+Example: If client requests index.html, server can proactively push style.css and script.js.
+🔹 4. Divide Objects into Frames
+HTTP/2 splits each object into small frames.
+These frames can be interleaved and scheduled flexibly.
+Example: server can send some frames of CSS, then some of JS, then image frames.
+This avoids Head-of-Line blocking at the HTTP layer.
+🔹 5. HOL Blocking Mitigation
+Because frames from different objects can be multiplexed in the same TCP connection:
+Large files don’t block smaller ones.
+Priorities + multiplexing make transmission more efficient.
