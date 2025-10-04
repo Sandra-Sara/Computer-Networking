@@ -1,0 +1,34 @@
+concepts lec 2
+HTTP uses TCP:
+client initiates TCP connection (creates socket) to server,  port 80
+server accepts TCP connection from client
+HTTP messages (application-layer protocol messages) exchanged between browser (HTTP client) and Web server (HTTP server)
+TCP connection closed.
+
+🧩 Packet 93
+Source: 10.0.0.44
+→ This is the client (your local machine or browser).
+Destination: 128.119.245.12
+→ This is the web server (hosting the webpage).
+Protocol: HTTP
+Info:
+GET /wireshark-labs/HTTP-wireshark-file1.html HTTP/1.1
+ This is an HTTP GET request, meaning the client is asking the server for a webpage named
+/wireshark-labs/HTTP-wireshark-file1.html.
+
+🧩 Packet 95
+Source: 128.119.245.12
+→ The server responds.
+Destination: 10.0.0.44
+→ The client receives the response.
+Protocol: HTTP
+Info:
+HTTP/1.1 200 OK (text/html)
+ This means the server successfully delivered the requested page, with the content type text/html.
+
+🔁 Summary of the exchange
+Step	Direction	Description
+1️⃣	10.0.0.44 → 128.119.245.12	Client requests the file HTTP-wireshark-file1.html
+2️⃣	128.119.245.12 → 10.0.0.44	Server responds with “200 OK” and sends the HTML file
+⚙️ In simpler terms
+Your computer (10.0.0.44) requested a webpage from a remote web server (128.119.245.12), and the server successfully replied with that webpage in HTML format.
