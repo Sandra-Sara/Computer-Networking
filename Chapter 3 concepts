@@ -85,3 +85,7 @@ no setup/handshaking needed (no RTT incurred)
 can function when network service is compromised
 helps with reliability (checksum)
 
+We will:
+incrementally develop sender, receiver sides of reliable data transfer protocol (rdt)
+consider only unidirectional data transfer
+but control info will flow in both directions!
