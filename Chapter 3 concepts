@@ -54,3 +54,15 @@ checks destination port # in segment
 directs UDP segment to socket with that port #
 IP/UDP datagrams with same dest. port #, but different source IP addresses and/or source port numbers will be directed to same 
 socket at receiving host
+
+Connection-oriented demultiplexing
+TCP socket identified by 4-tuple: 
+source IP address
+source port number
+dest IP address
+dest port number
+demux: receiver uses all four values (4-tuple) to direct segment to appropriate socket
+server may support many simultaneous TCP sockets:
+each socket identified by its own 4-tuple
+each socket associated with a different connecting client
+
