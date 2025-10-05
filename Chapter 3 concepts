@@ -39,5 +39,18 @@ use header info to deliver
 received segments to correct socket
 
 
-message is passed in transport layer from application layer,and header field(source port ,destination port),that is multiplexing ,using port IP/network layer ditect the correct socket and deliver
+message is passed in transport layer from application layer,and header field(source port ,destination port),that is multiplexing ,
+using port IP/network layer ditect the correct socket and deliver
 it to receiver's transport layer and then demultiplexing happens,then only the message is delivered into receiver's application layer.
+
+
+when creating socket, must specify host-local port #:
+  DatagramSocket mySocket1        = new DatagramSocket(12534);
+when creating datagram to send into UDP socket, must specify
+destination IP address
+destination port #
+when receiving host receives UDP segment:
+checks destination port # in segment
+directs UDP segment to socket with that port #
+IP/UDP datagrams with same dest. port #, but different source IP addresses and/or source port numbers will be directed to same 
+socket at receiving host
