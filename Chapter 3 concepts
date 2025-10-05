@@ -39,8 +39,9 @@ use header info to deliver
 received segments to correct socket
 
 
-message is passed in transport layer from application layer,and header field(destination IP address ,destination port),that is multiplexing ,
-using port IP/network layer ditect the correct socket and deliver in UTP connectionless.
+message is passed in transport layer from application layer,and header field(destination port ,source port),that is multiplexing ,
+using port IP/network layer ditect the correct socket and deliver in UTP connectionless.Destination IP address is added before
+going into socket.
 it to receiver's transport layer and then demultiplexing happens,then only the message is delivered into receiver's application layer.
 
 
