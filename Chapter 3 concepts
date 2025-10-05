@@ -1,0 +1,21 @@
+Transport services and protocols
+
+provide logical communication between application processes running on different hosts
+transport protocols actions in end systems:
+sender: breaks application messages into segments, passes to  network layer
+receiver: reassembles segments into messages, passes to application layer
+two transport protocols available to Internet applications
+TCP, UDP
+
+Sender part:
+-is passed an application layer message
+-determines segment header field values.
+-creates segment
+-passes segement to IP
+
+Receiver Part:
+-receives segment from IP
+-checks segment header values
+-extracts application layer messages
+-demultiplexes message up to application via socket
+
