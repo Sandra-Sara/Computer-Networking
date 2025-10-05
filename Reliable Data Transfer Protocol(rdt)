@@ -1,0 +1,5 @@
+is used that functions:
+1)rdt_send()
+2)udt_send()
+3)rdt_rcv()
+4)deliver_data()
