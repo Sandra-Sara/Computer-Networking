@@ -75,5 +75,8 @@ UDP: demultiplexing using destination port number (only)
 TCP: demultiplexing using 4-tuple: source and destination IP addresses, and port numbers
 Multiplexing/demultiplexing happen at all layers
 
+if reliable transfer needed over UDP (e.g., HTTP/3): 
+add needed reliability at application layer
+add congestion control at application layer
 
 
