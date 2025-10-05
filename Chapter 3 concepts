@@ -37,3 +37,6 @@ handle data from multiple
 sockets, add transport header (later used for demultiplexing)
 use header info to deliver
 received segments to correct socket
+
+
+message is passed in transport layer from application layer,and header field(source port ,destination port)
