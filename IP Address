@@ -1,0 +1,6 @@
+| **Layer (Top → Bottom)**              | **Main Function**                                           | **Examples / Protocols**   | **Related OSI Layers**             |
+| ------------------------------------- | ----------------------------------------------------------- | -------------------------- | ---------------------------------- |
+| **Application Layer**                 | Supports network applications                               | HTTP, SMTP, DNS, FTP       | Application, Presentation, Session |
+| **Transport Layer**                   | Process-to-process data transfer; ensures reliable delivery | TCP, UDP                   | Transport                          |
+| **Network Layer (Internet Layer)**    | Routing of data (choosing best path)                        | IP (IPv4, IPv6), ICMP, ARP | Network                            |
+| **Link Layer (Network Access Layer)** | Data transfer between neighboring network devices           | Ethernet, Wi-Fi, PPP       | Data Link + Physical               |
