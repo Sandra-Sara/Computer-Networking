@@ -81,3 +81,7 @@ add needed reliability at application layer
 add congestion control at application layer
 
 
+no setup/handshaking needed (no RTT incurred)
+can function when network service is compromised
+helps with reliability (checksum)
+
