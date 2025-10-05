@@ -31,3 +31,9 @@ no-frills extension of “best-effort” IP
 services not available: 
 delay guarantees
 bandwidth guarantees
+
+
+handle data from multiple
+sockets, add transport header (later used for demultiplexing)
+use header info to deliver
+received segments to correct socket
