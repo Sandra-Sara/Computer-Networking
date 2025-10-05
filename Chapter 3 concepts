@@ -66,3 +66,14 @@ server may support many simultaneous TCP sockets:
 each socket identified by its own 4-tuple
 each socket associated with a different connecting client
 
+Three segments, all destined to IP address: B,
+ dest port: 80 are demultiplexed to different sockets
+
+Summary
+Multiplexing, demultiplexing: based on segment, datagram header field values
+UDP: demultiplexing using destination port number (only)
+TCP: demultiplexing using 4-tuple: source and destination IP addresses, and port numbers
+Multiplexing/demultiplexing happen at all layers
+
+
+
