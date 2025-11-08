@@ -19,3 +19,13 @@ RTT = Time to send a message + Time to get the acknowledgment (ACK).
 EstimatedRTT=(1−α)×EstimatedRTT+α×SampleRTT
 SampleRTT = The measured Round-Trip Time (RTT) for one specific TCP segment.
 EstimatedRTT = average RTT
+
+
+R18.When the timer expires (meaning a packet is assumed lost due to timeout), TCP interprets this as a sign of congestion.
+As part of its congestion control mechanism:
+The ssthresh (slow start threshold) is set to half of the current congestion window (cwnd).
+Then, cwnd is reset to 1 MSS (to start slow start again).
+If timeout occurs
+ssthresh = cwnd / 2
+cwnd = 1 MSS
+This allows TCP to reduce the sending rate and slowly rebuild throughput to avoid further congestion.
