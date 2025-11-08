@@ -17,3 +17,4 @@ The payload of a TCP segment is the actual data being carried by that segment �
 RTT = Time to send a message + Time to get the acknowledgment (ACK).
 
 EstimatedRTT=(1−α)×EstimatedRTT+α×SampleRTT
+SampleRTT = The measured Round-Trip Time (RTT) for one specific TCP segment.
