@@ -1,0 +1,11 @@
+R5.Traditionally, voice and video traffic were sent using UDP, not TCP, because UDP is faster and has lower latency (it doesn’t wait for acknowledgments or retransmissions).
+However, in today’s Internet, many voice and video applications actually use TCP, or more commonly, UDP wrapped inside protocols that behave somewhat like TCP (e.g., QUIC).
+
+Firewalls and NATs block UDP more often
+Many routers, firewalls, and corporate networks block or throttle UDP traffic for security reasons.
+TCP (port 443) — used for HTTPS — is almost always allowed through firewalls.
+So, applications use TCP (or QUIC over UDP but on port 443) to ensure connectivity everywhere.
+
+Widespread use of HTTP/HTTPS (which runs over TCP)
+Modern apps (like Zoom, Google Meet, YouTube, etc.) often run over the web.
+Web browsers and APIs are built to use TCP/HTTPS, making it easier to deliver audio/video that way.
