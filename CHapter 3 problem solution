@@ -9,3 +9,6 @@ So, applications use TCP (or QUIC over UDP but on port 443) to ensure connectivi
 Widespread use of HTTP/HTTPS (which runs over TCP)
 Modern apps (like Zoom, Google Meet, YouTube, etc.) often run over the web.
 Web browsers and APIs are built to use TCP/HTTPS, making it easier to deliver audio/video that way.
+
+
+The payload of a TCP segment is the actual data being carried by that segment — the content sent by the application layer (like HTTP, FTP, email, etc.).
