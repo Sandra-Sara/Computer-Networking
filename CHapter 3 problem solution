@@ -12,3 +12,8 @@ Web browsers and APIs are built to use TCP/HTTPS, making it easier to deliver au
 
 
 The payload of a TCP segment is the actual data being carried by that segment — the content sent by the application layer (like HTTP, FTP, email, etc.).
+
+
+RTT = Time to send a message + Time to get the acknowledgment (ACK).
+
+EstimatedRTT=(1−α)×EstimatedRTT+α×SampleRTT
